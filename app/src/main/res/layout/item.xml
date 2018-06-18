@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:src="@drawable/banner"
+        android:id="@+id/thumb"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txt_times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/thumb"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/text_time"
+        android:padding="5dp"
+        android:text="5:30"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+    <RelativeLayout
+        android:id="@+id/botton_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thumb"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:src="@drawable/icoin"
+            android:id="@+id/circle_thumb"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/circle_thumb"
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_height="wrap_content"
+            android:text="Wiz Khalifa - See You Again ft. Charlie Puth [Official Video] Furious 7 Soundtrack"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/img_settting"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View
+        android:layout_below="@id/botton_bar"
+        android:layout_marginTop="5dp"
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="2px"/>
+
+</RelativeLayout>
